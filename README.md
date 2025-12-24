@@ -113,6 +113,7 @@ Icy Road: High wheel spin detected; PLC reduces torque until speeds align.
 High Speed: Air drag naturally limits the vehicle's top speed to 180 km/h, simulating realistic engine load.
 
 
+<img width="841" height="630" alt="Ekran görüntüsü 2025-12-23 162723" src="https://github.com/user-attachments/assets/dc7c44cd-5495-4aa9-b615-9950f50256cd" />
 
 
 Developed for Educational & Simulation Purposes.
