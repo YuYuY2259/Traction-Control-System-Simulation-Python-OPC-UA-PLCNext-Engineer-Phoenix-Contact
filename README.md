@@ -1,6 +1,7 @@
 # Traction-Control-System-Simulation-Python-OPC-UA-PLCNext-Engineer-Phoenix-Contact
 PLC &amp; Python Digital Twin: Traction Control System (TCS)  Secure Digital Twin simulation connecting PLCnext (OT) and Python (IT) via OPC UA. Features a real-time Traction Control System (TCS) that monitors wheel slip on simulated icy roads, using Newtonian physics and encrypted industrial communication.
 
+
 🚀 Project Overview
 
 The system consists of two main components:
@@ -10,6 +11,7 @@ PLC (The Brain): A PLCnext controller programmed in Structured Text (ST). It han
 Python (The Physics Engine): A simulation script that acts as the physical vehicle and environment. It calculates real-world physics like air drag, inertia, and road friction.
 
 The two systems communicate in real-time over a secure OPC UA bridge.
+
 
 
 🛠️ Tech Stack
@@ -27,6 +29,7 @@ Security: X.509 Certificates (OpenSSL), Sign & Encrypt (Basic256Sha256)
 Tools: UaExpert (Monitoring), PLCnext Engineer (IDE)
 
 
+
 🏗️ System Architecture
 
 Driver Input: User sets Gas, Brake, and Road Conditions (Dry/Wet/Ice) via the HMI.
@@ -38,6 +41,7 @@ Python receives torque via OPC UA, applies physics (Drag, Friction, Inertia), an
 Python writes Vehicle Speed and Wheel Speed back to the PLC.
 
 TCS Intervention: If the PLC detects a significant difference between wheel and vehicle speed (Slip), it automatically reduces motor torque to restore grip.
+
 
 
 💻 Code Explanations
@@ -65,6 +69,7 @@ Friction Model: Simulates "spinning wheels" on ice by decoupling wheel speed fro
 Secure Client: Implements a secure OPC UA client that handles encrypted handshakes with the PLC.
 
 
+
 🔑 Security Setup
 
 Industrial systems require high security. This project uses:
@@ -72,6 +77,7 @@ Industrial systems require high security. This project uses:
 Sign & Encrypt: All data packets are digitally signed and encrypted.
 
 Certificates: Requires .der and .pem certificates generated via OpenSSL to establish trust between the Python Client and PLC Server.
+
 
 
 ⚙️ Installation & Setup
@@ -97,6 +103,7 @@ Update PLC_URL in plc.py if necessary.
 Run: python plc.py
 
 
+
 📊 Results
 
 Dry Road: Perfect grip, wheel speed equals vehicle speed.
@@ -104,6 +111,8 @@ Dry Road: Perfect grip, wheel speed equals vehicle speed.
 Icy Road: High wheel spin detected; PLC reduces torque until speeds align.
 
 High Speed: Air drag naturally limits the vehicle's top speed to 180 km/h, simulating realistic engine load.
+
+
 
 
 Developed for Educational & Simulation Purposes.
