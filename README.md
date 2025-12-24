@@ -1,5 +1,6 @@
 # Traction-Control-System-Simulation-Python-OPC-UA-PLCNext-Engineer-Phoenix-Contact
 PLC &amp; Python Digital Twin: Traction Control System (TCS)  Secure Digital Twin simulation connecting PLCnext (OT) and Python (IT) via OPC UA. Features a real-time Traction Control System (TCS) that monitors wheel slip on simulated icy roads, using Newtonian physics and encrypted industrial communication.
+
 🚀 Project Overview
 
 The system consists of two main components:
@@ -9,6 +10,7 @@ PLC (The Brain): A PLCnext controller programmed in Structured Text (ST). It han
 Python (The Physics Engine): A simulation script that acts as the physical vehicle and environment. It calculates real-world physics like air drag, inertia, and road friction.
 
 The two systems communicate in real-time over a secure OPC UA bridge.
+
 
 🛠️ Tech Stack
 
@@ -24,6 +26,7 @@ Security: X.509 Certificates (OpenSSL), Sign & Encrypt (Basic256Sha256)
 
 Tools: UaExpert (Monitoring), PLCnext Engineer (IDE)
 
+
 🏗️ System Architecture
 
 Driver Input: User sets Gas, Brake, and Road Conditions (Dry/Wet/Ice) via the HMI.
@@ -36,7 +39,9 @@ Python writes Vehicle Speed and Wheel Speed back to the PLC.
 
 TCS Intervention: If the PLC detects a significant difference between wheel and vehicle speed (Slip), it automatically reduces motor torque to restore grip.
 
+
 💻 Code Explanations
+
 
 PLC Logic (Structured Text)
 
@@ -48,6 +53,7 @@ Proportional Control: Uses a Gain factor (Kp) to determine the intensity of torq
 
 Safety: Ensures motor torque never drops below zero or exceeds driver demand.
 
+
 Python Simulation
 
 The Python script is the "Physical World":
@@ -58,6 +64,7 @@ Friction Model: Simulates "spinning wheels" on ice by decoupling wheel speed fro
 
 Secure Client: Implements a secure OPC UA client that handles encrypted handshakes with the PLC.
 
+
 🔑 Security Setup
 
 Industrial systems require high security. This project uses:
@@ -66,7 +73,9 @@ Sign & Encrypt: All data packets are digitally signed and encrypted.
 
 Certificates: Requires .der and .pem certificates generated via OpenSSL to establish trust between the Python Client and PLC Server.
 
+
 ⚙️ Installation & Setup
+
 
 PLC Side:
 
@@ -75,6 +84,7 @@ Import the project into PLCnext Engineer.
 Enable the OPC UA Server and mark tags (Gas, Brake, Speed, etc.) with the OPC flag.
 
 Set up a user with "Initial Trust" or upload the Python client certificate.
+
 
 Python Side:
 
@@ -86,6 +96,7 @@ Update PLC_URL in plc.py if necessary.
 
 Run: python plc.py
 
+
 📊 Results
 
 Dry Road: Perfect grip, wheel speed equals vehicle speed.
@@ -94,8 +105,5 @@ Icy Road: High wheel spin detected; PLC reduces torque until speeds align.
 
 High Speed: Air drag naturally limits the vehicle's top speed to 180 km/h, simulating realistic engine load.
 
-🇹🇷 Türkçe Özet (Turkish Summary)
-
-Bu proje, bir aracın Çekiş Kontrol Sistemini (TCS) simüle eden bir Dijital İkiz uygulamasıdır. PLCnext (Kontrolcü) ve Python (Fizik Motoru) sistemlerini OPC UA protokolü üzerinden güvenli bir şekilde haberleştirir. Buzlu yollarda oluşan patinajı algılayan PLC, motor torkunu otomatik olarak kısarak aracın tutunmasını sağlar. Proje; endüstriyel haberleşme, siber güvenlik (sertifikalandırma) ve fiziksel sistemlerin yazılımsal modellenmesi konularında kapsamlı bir örnektir.
 
 Developed for Educational & Simulation Purposes.
