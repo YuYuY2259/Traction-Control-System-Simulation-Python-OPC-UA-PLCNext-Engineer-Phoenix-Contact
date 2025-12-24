@@ -34,7 +34,7 @@ Tools: UaExpert (Monitoring), PLCnext Engineer (IDE)
 
 Driver Input: User sets Gas, Brake, and Road Conditions (Dry/Wet/Ice) via the HMI.
 
-Control Loop: * PLC calculates the target torque.
+Control Loop: PLC calculates the target torque.
 
 Python receives torque via OPC UA, applies physics (Drag, Friction, Inertia), and calculates speeds.
 
