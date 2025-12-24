@@ -12,7 +12,7 @@ Python (The Physics Engine): A simulation script that acts as the physical vehic
 
 The two systems communicate in real-time over a secure OPC UA bridge.
 
-
+<img width="841" height="630" alt="Ekran görüntüsü 2025-12-23 162723" src="https://github.com/user-attachments/assets/dc7c44cd-5495-4aa9-b615-9950f50256cd" />
 
 🛠️ Tech Stack
 
@@ -112,8 +112,6 @@ Icy Road: High wheel spin detected; PLC reduces torque until speeds align.
 
 High Speed: Air drag naturally limits the vehicle's top speed to 180 km/h, simulating realistic engine load.
 
-
-<img width="841" height="630" alt="Ekran görüntüsü 2025-12-23 162723" src="https://github.com/user-attachments/assets/dc7c44cd-5495-4aa9-b615-9950f50256cd" />
 
 
 https://github.com/user-attachments/assets/b5e5ed98-967b-4891-a5ed-e0d0e43d52e7
