@@ -16,17 +16,23 @@ The two systems communicate in real-time over a secure OPC UA bridge.
 
 🛠️ Tech Stack
 
-Hardware/PLC: Phoenix Contact PLCnext (or PLCnext Engineer Simulator)
+Hardware/PLC: Phoenix Contact PLCnext (or PLCnext Engineer Simulator) 
+https://www.unified-automation.com/products/development-tools/uaexpert.html
 
 Language (PLC): IEC 61131-3 Structured Text (ST)
 
 Language (Simulation): Python 3.9+
+https://www.python.org/downloads/release/python-3912/
 
 Communication: OPC UA (Binary Protocol)
+https://www.unified-automation.com/products/development-tools/uaexpert.html
 
 Security: X.509 Certificates (OpenSSL), Sign & Encrypt (Basic256Sha256)
 
-Tools: UaExpert (Monitoring), PLCnext Engineer (IDE)
+Tools: 
+https://www.unified-automation.com/products/development-tools/uaexpert.html
+https://www.phoenixcontact.com/en-pc/products/software-plcnext-engineer-1046008
+https://www.python.org/downloads/release/python-3912/
 
 
 
